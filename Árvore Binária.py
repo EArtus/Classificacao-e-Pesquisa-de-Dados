@@ -9,7 +9,7 @@ def insert(root, key):
         return Node(key)
     else:
         if root.val < key:
-            root.right = insert(root.right, key)
+            root.right = insert(root.right, key) 
         else:
             root.left = insert(root.left, key)
     return root
